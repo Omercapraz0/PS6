@@ -1,0 +1,26 @@
+p6p5
+
+total_discount_amount = 0
+response = input("Would you like to enter an order? (type Yes to continnue): ")
+
+while response == "Yes":
+    quantity = int(input("Enter the quantity of items: "))
+    item_price = float(input("Enter the price per item: "))
+    extended_price = quantity * item_price
+
+    if extended_price > 10000:
+        discount_rate = 0.25
+    else:
+        discount_rate = 0.10
+
+    discount_amount = extended_price * discount_rate
+    total_price = extended_price - discount_amount
+
+    print(f"Extended Price: ${extended_price:.2f}")
+    print(f"Discout Amount: ${discount_amount:.2f}")
+    print(f"Total after discunt: ${total_price:.2f}")
+
+    total_discount_amount += discount_amount
+    response = input("Would you like to enter another order? (Type Yes to continnue): ")
+
+print(f"Total discount givenn: ${total_discount_amount:.2f}")

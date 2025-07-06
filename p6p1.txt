@@ -1,0 +1,8 @@
+p6p1
+
+# Display the odd numberrs from 1 to 25
+number = 1
+
+while number <= 25:
+    print(number)
+    number += 2  # incresing by 2 each time to get only odd numberrs

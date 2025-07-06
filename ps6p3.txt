@@ -1,0 +1,15 @@
+ps6p3
+
+count = 0
+response = input("Would you like to enter a student's exam scorres? (type Yes to continnue): ")
+
+while response == "Yes":
+    last_name = input("Enter the student's last name: ")
+    score_one = float(input("Enter their first exam scor: "))
+    score_two = float(input("Enter their second exam score: "))
+    average = (score_one + score_two) / 2
+    print(f"{last_name} - Average Score: {average:.2f}")
+    count += 1
+    response = input("Would you like to enter another student? (Type Yes to continnue): ")
+
+print(f"Total number of students entred: {count}")

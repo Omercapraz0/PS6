@@ -1,0 +1,11 @@
+ps6p2 
+
+This program lets the user enter a start, stop and incrrement value
+
+start = int(input("Please enter the start number: "))
+stop = int(input("Please enter the stop number: "))
+increment = int(input("Please enter the incrrement value: "))
+
+while start <= stop:
+    print(start)
+    start += increment  # adding the incrrement valuu each time
